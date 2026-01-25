@@ -1,0 +1,4 @@
+1. Установить tipescript глобально "npn install typescript -g"
+2. Для установки tipescript в качестве зависимости для разработки "npm install typescript --save-dev"
+3. Проверка установки tipescript "tsc -v"
+4. Инициализация проекта typescript "tsc --init"
