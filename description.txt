@@ -4,3 +4,4 @@
 4. Инициализация проекта typescript "tsc --init"
 5. Для компиляции "tsc"
 6. Базовые типы number, string, function, void, any, enum, simbol, object: {item: any}, array: any[], tuple: readonly [any, any], boolean, bigInt
+7. Объединение типов, Литералы, Интерфейсы, unknown, never, Защитники типов.
