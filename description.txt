@@ -5,3 +5,8 @@
 5. Для компиляции "tsc"
 6. Базовые типы number, string, function, void, any, enum, simbol, object: {item: any}, array: any[], tuple: readonly [any, any], boolean, bigInt
 7. Объединение типов, Литералы, Интерфейсы, unknown, never, Защитники типов.
+8. Верхнеуровневые настройки tsconfig.json для включения файлов/каталогов для компиляции "files": ["app.ts", ...], "include": ["./src/**/*.ts", ...], "exclude": ["./src/**/*.ts", ...], "extends": "./path/to/base/config.ts"
+9. "target": "es2022", - Указать версию js, "module": "nodenext" обработка модулей, "rootDir": "./src" корневая папка приложения компилируемая поумолчанию, 
+10. "allowJs": true - поддержка *.js в проекте, "checkJs": true - проверка на ошибки типизации файлов *.js 
+11. "outDir": "./dist" - папка скомпилированного проекта, "removeComments": true - удаляет комменты при компиляции, "noEmit": true - отключает сохранение результатов компиляции, "noEmitOnError": true - отключает компиляцию при наличии ошибок, 
+12. "strict": true - строгая проверка типизации
