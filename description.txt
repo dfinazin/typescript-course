@@ -10,3 +10,11 @@
 10. "allowJs": true - поддержка *.js в проекте, "checkJs": true - проверка на ошибки типизации файлов *.js 
 11. "outDir": "./dist" - папка скомпилированного проекта, "removeComments": true - удаляет комменты при компиляции, "noEmit": true - отключает сохранение результатов компиляции, "noEmitOnError": true - отключает компиляцию при наличии ошибок, 
 12. "strict": true - строгая проверка типизации
+13. Синтаксис классов "class ClassName {pro1: string; prop2: /type/; constructor(pro1:string, prop2?: /type/){this.prop1 = prop1 this.prop2 = prop2 ?? defConst}};  const classObj = new ClassName(prop1Volume, prop2Volume)"
+14. Методы классов прописываются после constructor
+15. Геттеры "get name(){return this._name}" и Сеттеры "set _name_(name){this._name = name}" Свойства геттеры и сеттеры должны называться по разному
+16. Наследование классов extends, super, override: "class child extends parent {...; constructor(...,parentPropName){super(parentPropName);...}; override parentMethod (...){return ...}}"
+17. Модификаторы доступа public, private(#), protected (protected для доступа к свойствам и методам внутри наследуемых классов)
+18. Статические методы и свойства class ClassName {ststic readonly staticProp1 = 'value'; ...}
+19. Упрощенная форма записи класса class ClassName {constructor(public pro1:string, private prop2?: /type/){}}
+20. Реализация интерфейсов классами и Абстрактные интерфейсы в примере по классам
