@@ -18,3 +18,5 @@
 18. Статические методы и свойства class ClassName {ststic readonly staticProp1 = 'value'; ...}
 19. Упрощенная форма записи класса class ClassName {constructor(public pro1:string, private prop2?: /type/){}}
 20. Реализация интерфейсов классами и Абстрактные интерфейсы в примере по классам
+21. Дженерики "const array: Array<string> = ['a', 'b', 'c']"
+22. Ограничение джинериков <T extends type1 | type2>, использование "keyof" <T extends object, R extends keyof T>
