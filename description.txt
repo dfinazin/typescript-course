@@ -23,4 +23,15 @@
 23. Утилиты: typeof - тип значения, Partial<type> - делает "атрибуты" необязательными, Readonly<type> - запрещает вносить изменения в переменную, Required<type> - делает "атрибуты" обязательными, Omit<interface, key> - Исключает из интерфейса указанный ключ, Pick<interface, key> - включает в интерфейс указанный ключ, Extract/Exclude<key1 | key2 ..., условие> - включает исключает ключи из интерфейса по условию
 24. ReturnType, Paramrters, ConstructorParameters в примере по утилитам
 25. Для использования Декораторов в TS необходимо их включить в tsconfig.json - "experimentalDecorators": true
-26. 
+26. Фенечки: Namespaces, файлы декларации - *.d.ts
+27. Настройка TS для Node JS:
+        1. "npm init -y" - Инициализация проекта
+        2. "npm i -D typescript" Установка TS
+        3. "npm i @types/node -D" Установка типизации Node JS
+        4. "tsc --init" - Инициализация проекта typescript
+        5. tsconfig.json: "compilerOptions": {"target": "es2018" (до es2020 не поддерживаются bigInt), "lib": ["ES6"](сомнительно, выпала ошибка на console.log), "module": "nodenext", "rootDir": "./src", "resolveJsonModule": true, "allowJs": true, "checkJs": true, "sourceMap": true, "outDir": "./dist", "removeComments": true, "strict": true, "noImplicitAny": true}, "include": ["./src/**/*"], "exclude": ["node_modules"], "lib": ["esnext"], "ts-node": {"esm": true}
+        6. package.json: "type": "module", "scripts": {"dev": "npx nodemon", "build": "rimraf ./dist && npx tsc", "start": "npm run build && node dist/index.js"}
+        7. "npm i -D ts-node nodemon" Установка nodemon
+        8. nodemon.json: "watch": ["src"], "ext": ".ts,.js", "ignore": [], "exec": "npx ts-node ./src/index.ts" 
+        9. "npm i -D rimraf" Установка rimraf - очистка билда (dist)
+

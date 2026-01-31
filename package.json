@@ -1,5 +1,30 @@
 {
   "devDependencies": {
+    "@types/node": "^25.1.0",
+    "nodemon": "^3.1.11",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
-  }
+  },
+  "name": "typescript-course",
+  "version": "1.0.0",
+  "description": "ResultSchool FrontendMiddle. Модуль TypeScript.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon",
+    "build": "rimraf ./dist && npx tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfinazin/typescript-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfinazin/typescript-course/issues"
+  },
+  "homepage": "https://github.com/dfinazin/typescript-course#readme"
 }

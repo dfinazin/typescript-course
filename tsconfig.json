@@ -7,11 +7,11 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "es6",
-    "target": "es2022",
+    "module": "nodenext",
+    "target": "es2020",
     "types": [],
     // For nodejs:
-    // "lib": ["esnext"],
+    //"lib": ["ES6"],
     // "types": ["node"],
     // and npm install -D @types/node
 
@@ -27,6 +27,7 @@
     // Style Options
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
+    "noImplicitAny": true,
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
     // "noFallthroughCasesInSwitch": true,
@@ -42,13 +43,18 @@
     "skipLibCheck": true,
 
     //JavaScript Support
-    //"allowJs": true,
-    //"checkJs": true
+    "allowJs": true,
+    "checkJs": true,
+    "resolveJsonModule": true,
 
     //Emit
     "removeComments": true,
     //"noEmit": true
     "noEmitOnError": true,
     "experimentalDecorators": true
-  }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules"],
+  "lib": ["esnext"],
+  "ts-node": { "esm": true }
 }
