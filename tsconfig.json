@@ -3,11 +3,11 @@
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
-    // "outDir": "./dist",
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "es6",
     "target": "es2022",
     "types": [],
     // For nodejs:
@@ -48,6 +48,7 @@
     //Emit
     "removeComments": true,
     //"noEmit": true
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "experimentalDecorators": true
   }
 }

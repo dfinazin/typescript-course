@@ -22,3 +22,5 @@
 22. Ограничение джинериков <T extends type1 | type2>, использование "keyof" <T extends object, R extends keyof T>
 23. Утилиты: typeof - тип значения, Partial<type> - делает "атрибуты" необязательными, Readonly<type> - запрещает вносить изменения в переменную, Required<type> - делает "атрибуты" обязательными, Omit<interface, key> - Исключает из интерфейса указанный ключ, Pick<interface, key> - включает в интерфейс указанный ключ, Extract/Exclude<key1 | key2 ..., условие> - включает исключает ключи из интерфейса по условию
 24. ReturnType, Paramrters, ConstructorParameters в примере по утилитам
+25. Для использования Декораторов в TS необходимо их включить в tsconfig.json - "experimentalDecorators": true
+26. 
