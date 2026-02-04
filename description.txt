@@ -35,3 +35,5 @@
         8. nodemon.json: "watch": ["src"], "ext": ".ts,.js", "ignore": [], "exec": "npx ts-node ./src/index.ts" 
         9. "npm i -D rimraf" Установка rimraf - очистка билда (dist)
 28. Практические задания по TS "lesson8.ts"
+29. vite-jsdoc "npm create vite@latest" "vite-jsdoc" "React" "JavaScript + SWC" перейти в папку проекта "npm i" "npm run dev" "/**" - для формирования справки по элементу, "npm install -g jsdoc" "npm i -D jsdoc", Создать jsdoc.json "study\Result\Middle\4_TypeScript\9_TS_React\vite-jsdoc\" "jsdoc -c jsdoc.json" не очень работает с jsx и стрелочными функциями.
+30. vite-ts-react "npm create create vite@latest" "vite-ts-react" "React" "TypeScript + SWC" перейти в папку проекта "npm i" "npm run dev" примеры в "study\Result\Middle\4_TypeScript\9_TS_React\vite-ts-react\src" папки "tepes", "Components", "context"
